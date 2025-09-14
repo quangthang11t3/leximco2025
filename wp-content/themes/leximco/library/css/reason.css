@@ -1,0 +1,442 @@
+.page_reasons * {
+    box-sizing: border-box;
+}
+
+.t-companyBlockSection {
+    width: 100%;
+    background-color: #fff
+}
+
+.t-companyBlockSection-inner {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.t-companyBlockSection-inner_top {
+    padding-bottom: 4.6875rem
+}
+
+.t-companyBlockVarious-h3 .en {
+    font-family: Barlow Condensed, YuGothic, 游ゴシック, Hiragino Kaku Gothic ProN, Hiragino Sans, Meiryo, sans-serif;
+    font-weight: 600;
+    color: #b02a2c;
+    letter-spacing: .1em
+}
+
+.t-companyBlockVarious-h3 .jp {
+    position: relative;
+    font-family: Noto Sans JP, YuGothic, 游ゴシック, Hiragino Kaku Gothic ProN, Hiragino Sans, Meiryo, sans-serif;
+    font-weight: 700;
+    letter-spacing: .05em
+}
+
+html[class*=-portuguese] .t-companyBlockVarious-h3 .jp {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: .04em
+}
+
+.t-companyBlockVarious-h3 .jp:after,
+.t-companyBlockVarious-h3 .jp:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0
+}
+
+.t-companyBlockVarious-h3 .jp:before {
+    width: 100%;
+    background-color: #f1f1f1
+}
+
+.t-companyBlockVarious-h3 .jp:after {
+    background-color: #b02a2c
+}
+
+.t-companyBlockVarious-h4 .en {
+    font-family: Barlow Condensed, YuGothic, 游ゴシック, Hiragino Kaku Gothic ProN, Hiragino Sans, Meiryo, sans-serif;
+    font-weight: 600;
+    color: #b02a2c;
+    letter-spacing: .1em
+}
+
+.t-companyBlockVarious-h4 .jp {
+    position: relative;
+    font-family: Noto Sans JP, YuGothic, 游ゴシック, Hiragino Kaku Gothic ProN, Hiragino Sans, Meiryo, sans-serif;
+    font-weight: 700;
+    letter-spacing: .05em
+}
+
+html[class*=-portuguese] .t-companyBlockVarious-h4 .jp {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: .04333em
+}
+
+.t-companyBlockVarious-text {
+    font-family: Noto Sans JP, YuGothic, 游ゴシック, Hiragino Kaku Gothic ProN, Hiragino Sans, Meiryo, sans-serif;
+    font-weight: 400;
+    letter-spacing: .05em;
+    text-align: justify
+}
+
+html[class*=-portuguese] .t-companyBlockVarious-text {
+    text-align: left
+}
+
+.t-companyBlockVarious-imageWrap {
+    position: relative
+}
+
+.t-companyBlockVarious-imageWrap {
+    text-align: center;
+}
+
+.t-companyBlockVarious-slide .item-slide {
+    padding: 0 10px;
+}
+
+.t-companyBlockVarious-slide .item-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.t-companyBlockVarious-slide .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: -15px
+}
+
+.t-companyBlockVarious-slide .slick-dots li {
+    margin-right: 14px
+}
+
+.t-companyBlockVarious-slide .slick-dots li:last-child {
+    margin-right: 0
+}
+
+.t-companyBlockVarious-slide .slick-dots li button {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    font-size: 0;
+    border: solid 1px #76c4ea;
+    background-color: #76c4ea;
+    border-radius: 50%
+}
+
+.t-companyBlockVarious-slide .slick-dots li button:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #eee;
+    border-radius: 50%;
+    content: ""
+}
+
+.t-companyBlockVarious-slide .slick-dots li.slick-active button {
+    border-color: #fff
+}
+
+.t-companyBlockVarious-slide .slick-dots li.slick-active button:before {
+    width: 6px;
+    height: 6px;
+    background-color: #fff
+}
+
+.t-companyBlockVarious-slide .slick-dots>li {
+    margin-right: 7px
+}
+
+.t-companyBlockVarious-slide .slick-dots>li.slick-active>button {
+    background-color: #bb2828
+}
+
+.t-companyBlockVarious-slide .slick-dots>li>button {
+    width: 15px;
+    height: 15px;
+    border: none;
+    background-color: #cfb2b2
+}
+
+.t-companyBlockVarious-slide .slick-dots>li>button:before {
+    content: none
+}
+
+.t-companyBlockVarious-item .text_red {
+    color: #b52830;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.t-companyBlockVarious-item .text_red+p {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.t-companyBlockVarious-col2,
+.t-companyBlockVarious-col3 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.t-companyBlockVarious-col3 {
+    flex-flow: column;
+    gap: 68px;
+}
+.t-companyBlockVarious-row {
+    flex: 1;
+    margin-bottom: 40px;
+}
+.t-companyBlockVarious-col3 .t-companyBlockVarious-imageWrap_inner {
+    text-align: center;
+}
+.t-companyBlockVarious-col3 .text_red {
+    text-align: center;
+}
+.t-companyBlockVarious-item.--custom1 .--img{
+    text-align: center;
+}
+.t-companyBlockVarious-col3 .t-companyBlockVarious-imageWrap_inner .img01 {
+  height: 130px;
+}
+.t-companyBlockVarious-col3 .t-companyBlockVarious-imageWrap_inner .img02 {
+  height: 112px;
+}
+.t-companyBlockVarious-col3 .t-companyBlockVarious-imageWrap_inner .img03 {
+  height: 101px;
+}
+.t-companyBlockVarious-text.type02 {
+  margin-top: 40px;
+}
+@media screen and (min-width: 768px) {
+    .t-companyBlockSection {
+        padding-bottom: 10rem
+    }
+    .t-companyBlockSection:last-child {
+        padding-bottom: 4rem
+    }
+    .t-companyBlockSection-inner_top {
+        padding-bottom: 4.6875rem
+    }
+    .t-companyBlockVarious {
+        margin-bottom: 6.875rem
+    }
+    .t-companyBlockVarious:last-of-type {
+        margin-bottom: -2.5rem
+    }
+    .t-companyBlockVarious-item {
+        margin-top: 2.1875rem
+    }
+    .t-companyBlockVarious-cnt.-half {
+        display: flex;
+        margin-top: 2.5rem
+    }
+    .t-companyBlockVarious-cnt.-half .c-wysiwyg p {
+        margin-bottom: 0
+    }
+    .t-companyBlockVarious-h3 .en {
+        margin-bottom: 16px;
+        font-size: 20px;
+    }
+    .t-companyBlockVarious-h3 .jp {
+        line-height: 1.4;
+        padding-bottom: 16px;
+        margin-bottom: 30px;
+        margin-left: -.1875rem;
+        font-size: 31px
+    }
+    .t-companyBlockVarious-h3 .jp:after,
+    .t-companyBlockVarious-h3 .jp:before {
+        height: 3px;
+        left: .1875rem
+    }
+    .t-companyBlockVarious-h3 .jp:after {
+        width: 5.625rem
+    }
+    .t-companyBlockVarious-h4 {
+        margin-bottom: 1.875rem
+    }
+    .t-companyBlockVarious-h4 .en {
+        margin-top: 5rem;
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem
+    }
+    .t-companyBlockVarious-h4 .jp {
+        line-height: 1.54;
+        font-size: 1.625rem
+    }
+    .t-companyBlockVarious-text {
+        line-height: 1.9;
+        font-size: 17px;
+        margin-bottom: 16px
+    }
+    .t-companyBlockVarious-cnt.-half .t-companyBlockVarious-text {
+        margin-top: -.625rem
+    }
+    .t-companyBlockVarious-cnt.-container {
+        padding: 0 31px;
+    }
+    .t-companyBlockVarious-cnt.-container img {
+      max-width: 80%;
+    }
+    .t-companyBlockVarious-cnt.-container img.type02 {
+      max-width: 100%;
+    }
+    .t-companyBlockVarious-imageWrap_mb {
+        margin-bottom: 3.125rem
+    }
+    .t-companyBlockVarious-item.--custom1 img{
+        margin-right: 0px;
+    }
+    .t-companyBlockVarious-col2,
+    .t-companyBlockVarious-col3 {
+        flex-flow: row;
+        gap: 57px;
+        align-items: flex-start;
+    }
+    .t-companyBlockVarious-item .text_red {
+        font-size: 18px;
+        line-height: 1.4em;
+    }
+    .t-companyBlockVarious-item .text_red.fz_haft {
+        font-size: 16px;
+        margin-bottom: 2px;
+    }
+    .t-companyBlockVarious-item .text_red+p {
+        font-size: 15px;
+        line-height: 1.8em;
+    }
+    .t-companyBlockVarious-imageWrap_inner {
+        margin-bottom: 20px;
+    }
+    .t-companyBlockVarious-col3 .t-companyBlockVarious-imageWrap_inner {
+        min-height: 130px;
+        text-align: center;
+    }
+    .t-companyBlockVarious-col3 .text_red {
+        min-height: 50px;
+        text-align: center;
+    }
+    .t-companyBlockVarious-item.--custom1 .img01 img {
+     max-width: 235px; 
+    }
+    .t-companyBlockVarious-item.--custom1 .img02 img {
+      max-width: 155px; 
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .page_reasons {
+        margin-top: 3rem;
+    }
+    .t-companyBlockSection {
+        padding-bottom: 3.75rem
+    }
+    .t-companyBlockSection-inner_top {
+        padding-bottom: 2.03125rem
+    }
+    .t-companyBlockVarious {
+        margin-bottom: 3.4375rem
+    }
+    .t-companyBlockVarious:last-of-type {
+        margin-bottom: 0
+    }
+    .t-companyBlockVarious-item {
+        margin-top: 20px;
+    }
+    .t-companyBlockVarious-h3 .en {
+        margin-bottom: .625rem;
+        font-size: 14px;
+    }
+    .t-companyBlockVarious-h3 .jp {
+        line-height: 1.4;
+        padding-bottom: 14px;
+        margin-bottom: 16px;
+        margin-left: -.09375rem;
+        font-size: 24px;
+    }
+    .t-companyBlockVarious-h3 .jp:after,
+    .t-companyBlockVarious-h3 .jp:before {
+        height: .09375rem;
+        left: .09375rem
+    }
+    .t-companyBlockVarious-h3 .jp:after {
+        width: 2.8125rem
+    }
+    .t-companyBlockVarious-h4 {
+        margin-bottom: 1.25rem
+    }
+    .t-companyBlockVarious-h4 .en {
+        margin-bottom: .625rem;
+        font-size: .875rem
+    }
+    .t-companyBlockVarious-h4 .jp {
+        line-height: 1.44;
+        font-size: 1rem
+    }
+    .t-companyBlockVarious-text {
+        line-height: 1.92;
+        font-size: 16px;
+    }
+    .t-companyBlockVarious-imageWrap {
+        width: 100%;
+        margin-top: 2.1875rem
+    }
+    .t-companyBlockVarious-imageWrap_mb {
+        margin-bottom: 1.5625rem
+    }
+    .t-companyBlockVarious-slide .slick-dots>li>button {
+        width: 10px;
+        height: 10px
+    }
+    .t-companyBlockVarious-imageWrap_inner {
+        padding: 0 16px;
+    }
+    .t-companyBlockVarious-imageWrap_inner picture {
+        display: block;
+        padding: 0 24px;
+        margin-bottom: 16px;
+    }
+    .t-companyBlockVarious-col3 {
+        align-items: center;
+        gap: 40px;
+    }
+    .t-companyBlockVarious-col3 .t-companyBlockVarious-imageWrap_inner,
+    .t-companyBlockVarious-col3 .cnt {
+        flex: 1;
+    }
+    .t-companyBlockVarious-col3 .t-companyBlockVarious-row {
+        display: flex;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .t-companyBlockVarious-h3 .en {
+        font-size: 12px;
+    }
+    .t-companyBlockVarious-h3 .jp {
+        font-size: 18px;
+    }
+    .t-companyBlockVarious-text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-width:768px) {
+    .t-companyBlockVarious-cnt.-half .t-companyBlockVarious-imageWrap {
+        width: 38.75rem;
+        margin-left: 5.9375rem
+    }
+    .t-groupCorpHeader-top {
+        width: 85rem
+    }
+}

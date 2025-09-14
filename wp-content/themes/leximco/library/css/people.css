@@ -1,0 +1,587 @@
+.pbAreaWrapper1 {
+  background: transparent !important;
+}
+.is-sp {
+  display: none;
+}
+.page_people {
+  position: relative;
+  color: #464646;
+  overflow: hidden;
+}
+
+#js_background_people {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#people-detail {
+  padding: 25px 5% 0;
+}
+
+.page_people a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page_people * {
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.people-bannerWrapper {
+  margin-bottom: 78px;
+}
+
+.people-banner {
+  height: 185px;
+  position: relative;
+  margin-bottom: 30px;
+  /* border-radius: 20px; */
+  overflow: hidden;
+}
+
+.people-banner figure {
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.people-banner figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  box-sizing: border-box;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.person-index {
+  position: relative;
+  z-index: 1;
+  width: 910px;
+  max-width: 100%;
+  margin: 60px auto 100px;
+}
+
+.person-index__item {
+  height: 311px;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translate3d(0, 40px, 0);
+  backface-visibility: hidden;
+  transition: opacity 0.3s linear,
+    transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), pointer-events 0.4s;
+}
+
+.person-index__item + .person-index__item {
+  margin-top: 32px;
+}
+
+.person-index__item .blc-txts {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 0 0 30px;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-weight: 400;
+  opacity: 0;
+  transform: translate3d(20px, 0, 0);
+  backface-visibility: hidden;
+  transition: opacity 0.15s linear,
+    transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-delay: 0.2s;
+}
+
+.person-index__item .job {
+  min-height: 55px;
+  margin: 0 0 15px;
+  font-size: 20px;
+  line-height: 1.4;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+  color: #fff;
+  font-weight: 400;
+  position: relative;
+  z-index: 11;
+}
+
+.person-index__item .message {
+  min-height: 85px;
+  margin: 0 0 40px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro", Hiragino Mincho Pro,
+    "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝";
+}
+
+.person-index__item figure {
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  padding-left: 230px;
+}
+
+.person-index__item figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  box-sizing: border-box;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.person-index__item figure .out {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.person-index__item figure:after {
+  content: "";
+  width: 240px;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: auto;
+  background: linear-gradient(270deg, transparent 0, rgba(0, 0, 0, 0.15));
+}
+
+.person-index__item .bg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 0;
+  background: #a7a387 !important;
+}
+
+.person-index__item--office .bg {
+  background: #d55b52;
+}
+
+.person-index__item--affairs .bg {
+  background: #eb5a5a;
+}
+
+.person-index__item--accounting .bg {
+  background: #b02a2d;
+}
+
+.person-index__item--labor .bg {
+  background: #9d3234;
+}
+
+.person-index__item--recruitment .bg {
+  background: #8b1d1f;
+}
+
+.is-scr-show.person-index__item {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+.is-scr-show.person-index__item .blc-txts {
+  opacity: 1;
+  transform: none;
+}
+
+.is-scr-show.person-index__item:hover {
+  transform: scale(1.025);
+}
+
+.people.is-visible {
+  opacity: 1;
+}
+
+.people-detail__head {
+  line-height: 1.4;
+  padding-bottom: 16px;
+  margin-bottom: 50px;
+  margin-left: -0.1875rem;
+  font-size: 30px;
+  position: relative;
+  font-family: Noto Sans JP, YuGothic, 游ゴシック, Hiragino Kaku Gothic ProN,
+    Hiragino Sans, Meiryo, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.people-detail__head:after,
+.people-detail__head:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  left: 0.1875rem;
+}
+
+.people-detail__head:before {
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.people-detail__head:after {
+  width: 5.625rem;
+  background-color: #b02a2c;
+}
+
+.people__item {
+  position: relative;
+  margin-bottom: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column;
+}
+
+.people__item.bg_gray {
+  padding: 30px 0;
+}
+
+.people__item.bg_gray:after {
+  /* content: ''; */
+  width: 100vw;
+  height: calc(100% + 60px);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -60px;
+  background-color: #efefef;
+  z-index: -1;
+}
+
+.people__image {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.people__image img {
+  display: block;
+}
+
+.people__content {
+  margin-bottom: 40px;
+}
+
+.people__content .text {
+  font-size: 14px;
+  line-height: 1.8em;
+}
+
+.people__content .text strong {
+  font-weight: bold;
+}
+
+.people__content .text p {
+  text-align: justify;
+}
+
+.people-head {
+  text-align: center;
+  padding: 5px 0 0;
+  margin-bottom: 25px;
+}
+
+.people-head__pro {
+  font-family: dnp-shuei-gothic-gin-std, sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.people-head__name {
+  font: 600 22px dnp-shuei-gothic-gin-std, sans-serif;
+  letter-spacing: 0.1em;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.people-head__kana {
+  font-family: "Lato", dnp-shuei-gothic-gin-std, sans-serif;
+  letter-spacing: 0.08em;
+}
+
+.detail-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.detail-btn a {
+  display: flex;
+  min-width: 150px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  z-index: 2;
+  position: relative;
+  font-size: 12px;
+  color: #ffffff;
+  background: #a23633;
+  font-family: "Montserrat", sans-serif;
+  background-size: 30px 22px;
+}
+
+.detail-btn a:before {
+  content: "";
+  width: 32px;
+  height: 22px;
+  display: inline-block; 
+  background: url(../images/common/ico_btn_off.png) left center no-repeat;
+  background-size: 100% auto;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.detail-btn a:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  content: "";
+  background: #000000 !important;
+  background-size: 16px 16px;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: transform 0.3s;
+}
+
+.detail-btn a:hover:after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+#accounting_slide {
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+#accounting_slide .slick-list,
+#accounting_slide .slick-track {
+  height: 100%;
+}
+
+#accounting_slide .blc-txts {
+  padding-top: 65px;
+}
+
+.person-index__item.person-index__item--accounting .job {
+  padding: 0 0 0 30px;
+  margin-top: 55px;
+}
+
+@media screen and (min-width: 901px) {
+  #page_leadTxt h3.w100 {
+    width: 100%;
+  }
+  .page_people .sectionBase article {
+    padding: 35px 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .people {
+    /* pc */
+    margin-bottom: 80px;
+  }
+  .people__item {
+    /* pc */
+    margin-bottom: 70px;
+    flex-flow: row;
+  }
+  .people-banner {
+    margin-bottom: 30px;
+    height: 400px;
+  }
+  .people__item.bg_gray:after {
+    top: -30px;
+  }
+  .people__image {
+    /* pc */
+    width: 50%;
+    padding: 0 0 0 4.2%;
+    margin-bottom: 0;
+  }
+  .people__content {
+    /* pc */
+    width: 50%;
+    padding: 0 4.2% 20px;
+    margin-bottom: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+  .people__content--right {
+    padding: 0 6.5% 0 4.2%;
+  }
+  .people__content .text {
+    /* pc */
+    font-size: 15px;
+  }
+  .people-head {
+    /* pc */
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .people-head__pro {
+    /* pc */
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .people-head__name {
+    /* pc */
+    font-size: 24px;
+    line-height: 2;
+    margin-bottom: 0;
+  }
+  .detail-btn a {
+    font-size: 14px;
+    min-width: 205px;
+    min-height: 65px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .person-index {
+    width: auto;
+  }
+  ul.person-index__list {
+    padding: 0 32px !important;
+  }
+  .people__content {
+    order: 2;
+  }
+  .people-bannerWrapper {
+    margin-bottom: 50px;
+  }
+  .person-index__item {
+    height: 140px;
+    border-radius: 10px;
+  }
+  .person-index__item + .person-index__item {
+    margin-top: 16px;
+  }
+  .person-index__item .blc-txts {
+    padding-left: 8px;
+  }
+  .person-index__item .job {
+    min-height: auto;
+    font-size: 10px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: unset;
+    letter-spacing: 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  .person-index__item .message {
+    min-height: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  .person-index__item figure {
+    width: 73%;
+    overflow: hidden;
+    padding-left: 0;
+  }
+  .person-index__item figure img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .person-index__item figure:after {
+    content: "";
+    width: 40%;
+    top: 0;
+    left: -1px;
+    position: absolute;
+    z-index: auto;
+    background: linear-gradient(270deg, transparent 0, rgba(0, 0, 0, 0.25));
+  }
+  .people-detail__head {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+  .detail-btn {
+    margin-top: 80px;
+  }
+  #accounting_slide .blc-txts {
+    padding-top: 40px;
+  }
+  .person-index__item.person-index__item--accounting .job {
+    padding-left: 10px;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .not-sp {
+    display: none;
+  }
+  .is-sp {
+    display: block;
+  }
+  .person-index__item figure {
+    width: 69%;
+  }
+  .person-index__item.person-index__item--accounting .job {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .person-index__item {
+    height: 122px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .person-index__item {
+    height: 115px;
+  }
+  .person-index__item .message {
+    font-size: 12px;
+  }
+  .person-index__item .job {
+    margin-bottom: 8px;
+  }
+}

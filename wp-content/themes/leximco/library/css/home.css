@@ -1,0 +1,16 @@
+.pbAreaWrapper1 {
+	background: none;
+}
+#topInfo {
+	background: #f4f5f6;
+	padding: 80px 0;
+}
+@media screen and (min-width:631px) and (max-width:768px) {
+	#topInfo { padding:50px 0; }
+}
+@media screen and (min-width:431px) and (max-width:630px) {
+	#topInfo { padding:40px 0; }
+}
+@media screen and (max-width:430px) {
+	#topInfo { padding:30px 0; }
+}

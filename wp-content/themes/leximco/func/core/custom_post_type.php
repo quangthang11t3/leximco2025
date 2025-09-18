@@ -50,6 +50,7 @@ function create_taxonomy() {
 			'hierarchical'               => true,
 			'public'                     => true,
 			'show_ui'                    => true,
+			'show_in_rest'               => true,
 			'show_admin_column'          => true,
 			'show_in_nav_menus'          => false,
 			'show_tagcloud'              => false,

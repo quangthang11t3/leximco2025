@@ -237,7 +237,7 @@ $email = get_option('email_option');
                                   </a>
                                 </li>
                                 <li class="mainNavLi directLink siteLinkImgSub">
-                                  <a href="<?php echo get_permalink($pageId["index"]); ?>">
+                                  <a href="https://job.leximco.jp/">
                                     <p class="mainNavTxt">Những người đang tìm việc</p>
                                   </a>
                                 </li>
